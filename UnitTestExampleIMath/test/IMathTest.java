@@ -1,9 +1,15 @@
+package test;
+
 import junit.framework.*;
-import junit.framework.TestCase;
-/** A JUnit test class to test the class IMath. */
-public class IMathTest extends TestCase {
+import org.junit.Test;
+/** A JUnit test class to test the class IMath.IMathTestNoJUnit.IMath. */
+public class IMathTest extends TestCase { // Test Case Class
     /** Tests isqrt. */
-    public void testIsqrt() {
+    @Test
+    public void testIsqrt() { // Test Case Method
+        // Tested Class: IMath.IMathTestNoJUnit.IMath
+        // Tested Method: isqrt
+        // assertion statements
         assertEquals(0, IMath.isqrt(0));
         assertEquals(1, IMath.isqrt(1));
         assertEquals(1, IMath.isqrt(2));

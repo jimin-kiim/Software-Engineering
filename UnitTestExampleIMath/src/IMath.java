@@ -1,3 +1,5 @@
+package src;
+
 public final class IMath {
     /**
      * Returns an integer approximation to the square root of x. */

@@ -1,5 +1,6 @@
+package test;
 
-/** A class to test the class IMath. */
+/** A class to test the class IMath.IMathTestNoJUnit.IMath. */
 public class IMathTestNoJUnit {
     /** Runs the tests. */
     public static void main(String[] args) {
@@ -15,5 +16,14 @@ public class IMathTestNoJUnit {
     private static void printTestResult(int arg) {
         System.out.print("isqrt(" + arg + ") ==> ");
         System.out.println(IMath.isqrt(arg));
+    }
+
+    public static final class IMath {
+        /**
+         * Returns an integer approximation to the square root of x. */
+        public static int isqrt(int x) { int guess = 1;
+            while (guess * guess < x) {
+                guess++; }
+            return guess; }
     }
 }
